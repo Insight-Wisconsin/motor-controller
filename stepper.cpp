@@ -1,10 +1,11 @@
 #include "stepper.h"
+using namespace std;
 
 Stepper::Stepper(PinName pin1, PinName pin2, PinName pin3, PinName pin4):
-    out1(pin1),
-    out2(pin2),
-    out3(pin3),
-    out4(pin4) {
+    out1(DigitalOut(pin1)),
+    out2(DigitalOut(pin2)),
+    out3(DigitalOut(pin3)),
+    out4(DigitalOut(pin4)) {
     this->pin1 = pin1;
     this->pin2 = pin2;
     this->pin3 = pin3;
